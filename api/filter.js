@@ -256,7 +256,6 @@ function FilterClient(jiraClient) {
     this.buildRequestOptions = function (opts, path, method, body, qs) {
         var basePath = '/filter/' + opts.filterId;
         if (!qs) qs = {};
-        if (!body) body = {};
 
         if (opts.fields) {
             qs.fields = '';
